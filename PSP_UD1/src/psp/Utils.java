@@ -13,4 +13,8 @@ public class Utils {
 				Arrays.asList("cmd", "/c", cmd) 
 				: Arrays.asList("sh", "-c", cmd);
 	}
+	
+	public static void main(String[] args) {
+		System.out.println(System.getProperty("os.name"));
+	}
 }
