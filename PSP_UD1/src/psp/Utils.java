@@ -9,6 +9,8 @@ public class Utils {
 	}
 
 	public static List<String> sh(String cmd) {
-		return isWindows() ? Arrays.asList("cmd", "/c", cmd) : Arrays.asList("sh", "-c", cmd);
+		return isWindows() ? 
+				Arrays.asList("cmd", "/c", cmd) 
+				: Arrays.asList("sh", "-c", cmd);
 	}
 }
